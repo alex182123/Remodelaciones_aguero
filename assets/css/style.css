@@ -10,33 +10,41 @@ body {
   background-color: black;
   opacity: 0.3;
   width: 100%;
-  height: 920px;
+  height: 960px;
 }
 #title,
 #slogan {
-    display: none;
+  display: none;
 }
 
 /* CSS CLASS */
-
+.developer-link {
+  color: white;
+}
+.developer-link:hover {
+  color: #79531e;
+}
 .navbar {
   padding: 20px 0px;
   z-index: 1000; /* Un valor alto para asegurarse de que esté encima de todo */
   position: fixed;
   width: 100%; /* Opcional: para asegurarse de que el ancho sea del 100% */
   background-color: transparent;
-  transition: background-color 0.4s;
+  transition: all 0.4s;
 }
-.nav-link {
-  padding: 5px 30px !important;
+.scrolled {
+  border-bottom: 1px solid white;
+  background-color: black;
+}
+.nav-link-custom {
+  padding: 7px 30px !important;
   color: white;
-  transition: color 0.4s;
+  text-decoration: none;
+  transition: all 0.4s;
 }
-.nav-link:hover {
+.nav-link-custom:hover {
   color: #79531e;
-}
-.nav-link:active {
-  color: #d9d9d9a9;
+  border-bottom: 1px solid #79531e;
 }
 .title-second-color {
   color: #79531e;
@@ -54,5 +62,42 @@ body {
   color: white;
   border: 1px white solid;
 }
-.social-button:hover {
+.card {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: all 0.4s;
+  box-shadow: -6px 6px 5px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -6px 6px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: -6px 6px 5px 0px rgba(255, 255, 255, 0.75);
+}
+.card:hover {
+  box-shadow: -13px 9px 8px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -13px 9px 8px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: -13px 9px 8px 0px rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 1440px) {
+  /* Your CSS styles for extra-large screens (xl) */
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Your CSS styles for large screens (lg) */
+  #home-image {
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 600px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Your CSS styles for medium screens (md) */
+}
+@media (max-width: 767px) {
+  /* Your CSS styles for small screens (sm) */
+  #home-image {
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 670px;
+  }
 }

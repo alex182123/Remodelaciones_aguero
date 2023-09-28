@@ -6,9 +6,14 @@ function getYearCopyright() {
 function fadeNavbar() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('#myNavbar').css('background-color', 'black'); // Muestra la barra de navegación
+            $('#myNavbar').addClass('scrolled'); // Muestra la barra de navegación
+
+            // $('#myNavbar').css('background-color', 'black'); // Muestra la barra de navegación
         } else {
-            $('#myNavbar').css('background-color', 'transparent'); // Oculta la barra de navegación
+            $('#myNavbar').removeClass('scrolled'); // Muestra la barra de navegación
+
+
+            // $('#myNavbar').css('background-color', 'transparent'); // Oculta la barra de navegación
         }
     });
 }
